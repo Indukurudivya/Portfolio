@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #ffffff;
+            padding: 20px 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ff9900;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0d47a1;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .project-card h2 {
+            color: #1565c0;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .tags {
+            margin-top: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/skills/">Skills</a>
+        <a href="/projects/">Projects</a>
+        <a href="/experience/">Experience</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>My Projects</h1>
+
+        <div class="project-card">
+            <h2>Trainees’ Assessment Report (Full Stack)</h2>
+            <p>Developed a full-stack web application to manage 100+ trainees’ assessments and performance reports. 
+               Implemented role-based access (Admin, Assessor, Trainee), responsive frontend, and MySQL database 
+               integration. Automated report generation reduced reporting time from 2 hours to 30 minutes.</p>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>Portfolio Website</h2>
+            <p>Personal portfolio website built with Django, showcasing skills, experience, and projects with 
+               clean UI and responsive design. Integrated navigation between multiple sections like About, Skills, Projects, and Experience.</p>
+            <div class="tags">
+                <span class="tag">Django</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>Augmented Images Review & Annotation (Previous Company)</h2>
+            <p>Reviewed digital content for compliance with organizational standards. 
+               Managed records using CMS tools and created compliance metric reports. 
+               Maintained consistent documentation and designed brand-compliant PowerPoint templates 
+               to support client deliverables.</p>
+            <div class="tags">
+                <span class="tag">CMS Tools</span>
+                <span class="tag">Compliance</span>
+                <span class="tag">Documentation</span>
+                <span class="tag">PowerPoint</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2>Vehicle Anti-Theft Detection and Protection using Facial Recognition (College Project)</h2>
+            <p>Developed a security system to prevent vehicle theft by integrating facial recognition. 
+               The system authenticates the owner and restricts unauthorized access. 
+               Implemented using Python and OpenCV, demonstrating real-world application of AI in vehicle safety.</p>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Facial Recognition</span>
+                <span class="tag">Security</span>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

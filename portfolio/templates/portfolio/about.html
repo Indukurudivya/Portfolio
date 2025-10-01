@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f1f3f6;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #ffffff;
+            padding: 20px 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #ff9900;
+        }
+
+        /* Section Containers */
+        .section {
+            width: 85%;
+            background: #ffffff;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        }
+
+        /* Section Headings */
+        h2 {
+            text-align: center;
+            color: #0d47a1;
+            font-size: 34px;
+            margin-top: 40px;
+        }
+        .section h3 {
+            color: #1565c0;
+            font-size: 22px;
+            margin-bottom: 12px;
+            border-left: 5px solid #42a5f5;
+            padding-left: 10px;
+        }
+
+        /* Texts & Lists */
+        .section p, .section ul {
+            margin: 6px 0;
+            color: #424242;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        strong { color: #212121; }
+
+        /* Career Summary */
+        .career-summary {
+            border-left: 4px solid #42a5f5;
+            background: #f9f9f9;
+        }
+
+        /* Education Timeline */
+        .education-timeline {
+            border-left: 3px solid #42a5f5;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+        .education-item {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .education-item::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background-color: #42a5f5;
+            border-radius: 50%;
+            position: absolute;
+            left: -28px;
+            top: 6px;
+        }
+        .education-item h4 {
+            margin: 0;
+            font-size: 17px;
+            color: #0d47a1;
+        }
+        .education-item span {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-list span {
+            background: #e3f2fd;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #1565c0;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        .skills-list span:hover {
+            background: #42a5f5;
+            color: #fff;
+        }
+
+        /* Interests */
+        .interests-list {
+            list-style: none;
+            padding: 0;
+        }
+        .interests-list li {
+            margin: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        .interests-list li::before {
+            content: "✔";
+            color: #42a5f5;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/skills/">Skills</a>
+        <a href="/projects/">Projects</a>
+        <a href="/experience/">Experience</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+
+    <h2>About Me</h2>
+
+    <!-- Career Summary -->
+    <div class="section career-summary">
+        <h3>Career Summary</h3>
+        <p>
+            I am a passionate Full Stack Developer with expertise in front-end and back-end technologies. 
+            My goal is to design and build scalable web applications that solve real-world problems efficiently. 
+            I am enthusiastic about learning new technologies, contributing to impactful projects, 
+            and growing into a backend system design specialist.
+        </p>
+    </div>
+
+    <!-- Personal Details -->
+    <div class="section">
+        <h3>Personal Details</h3>
+        <p><strong>Father's Name:</strong> {{ about.father_name }}</p>
+        <p><strong>Gender:</strong> {{ about.gender }}</p>
+        <p><strong>Date of Birth:</strong> {{ about.dob }}</p>
+        <p><strong>Nationality:</strong> {{ about.nationality }}</p>
+        <p><strong>Languages Known:</strong> {{ about.languages_known }}</p>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <h3>Education</h3>
+        <div class="education-timeline">
+            <div class="education-item">
+                <h4>B.Tech in Electronics & Communications</h4>
+                <span>RSR Engineering College - CGPA: 7.5 (2019 - 2023)</span>
+            </div>
+            <div class="education-item">
+                <h4>Intermediate (12th Standard)</h4>
+                <span>Priyadarshini Junior College - CGPA: 9.5 (2017 - 2019)</span>
+            </div>
+            <div class="education-item">
+                <h4>10th Standard</h4>
+                <span>VNR ZPP High School - GPA: 8.2 (2016 - 2017)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills & Certifications -->
+    <div class="section">
+        <h3>Skills & Certifications</h3>
+        <div class="skills-list">
+            <span>Python Full Stack (Certified)</span>
+            <span>SDLC Workshop</span>
+        </div>
+    </div>
+
+    <!-- Interests -->
+    <div class="section">
+        <h3>Interests</h3>
+        <ul class="interests-list">
+            <li>Browsing the internet</li>
+            <li>Cooking</li>
+            <li>Listening to music</li>
+        </ul>
+    </div>
+
+    <!-- Goals -->
+    <div class="section">
+        <h3>Goals</h3>
+        <p>To work as a full-time developer, build impactful platforms, and grow in backend system design.</p>
+    </div>
+
+</body>
+</html>

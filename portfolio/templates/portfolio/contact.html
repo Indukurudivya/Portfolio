@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #ffffff;
+            padding: 20px 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #ff9900;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0d47a1;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h2 {
+            color: #1565c0;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+            color: #444;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #1565c0;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/skills/">Skills</a>
+        <a href="/projects/">Projects</a>
+        <a href="/experience/">Experience</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Me</h1>
+
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Email:</strong> divyaindukuru.i@gmail.com</p>
+            <p><strong>Phone:</strong> +91-7997807742</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/divya-indukuru-7828a6278/?original_referer=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2F&originalSubdomain=in" target="_blank">linkedin.com/in/divyaindukuru</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Indukurudivya?tab=repositories" target="_blank">github.com/divyaindukuru</a></p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form method="post" action="#">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
